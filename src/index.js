@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { initContract } from './utils'
-import AppTest from './AppTest';
+import App from './App';
 
 window.nearInitPromise = initContract()
   .then(() => {
     ReactDOM.render(
-      <AppTest />,
+      <App />,
       document.querySelector('#root')
     )
   })
